@@ -1,7 +1,0 @@
-# ErrorFormatter document generator jazzy settings
-
-copyright: Copyright 2021 ky1vstar
-author: ky1vstar
-xcodebuild_arguments: [-target, ErrorFormatter-iOS]
-clean: true
-output: ./Documentation

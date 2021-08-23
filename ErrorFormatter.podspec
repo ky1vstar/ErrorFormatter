@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                      = "ErrorFormatter"
-  s.version                   = "1.0.0"
+  s.version                   = ENV["LIB_VERSION"] || "1.0.0"
   s.summary                   = "ErrorFormatter"
   s.homepage                  = "https://github.com/ky1vstar/ErrorFormatter"
   s.license                   = { :type => "MIT", :file => "LICENSE" }
