@@ -35,9 +35,9 @@ public struct ErrorFormatter {
     public mutating func removeAllFormats<Failure: Error>(
         for errorType: Failure.Type
     ) {
-        for i in (0 ..< providers.count).reversed() {
-            if providers[i].errorType == errorType {
-                providers.remove(at: i)
+        for index in (0 ..< providers.count).reversed() {
+            if providers[index].errorType == errorType {
+                providers.remove(at: index)
             }
         }
     }
