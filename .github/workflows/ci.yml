@@ -26,14 +26,14 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Carthage build
-      run: ./Scripts/carthage.sh build --platform "ios,macos,tvos,watchos" --no-skip-current
+      run: ./Scripts/carthage.sh build --platform "ios,macos,tvos,watchos" --no-skip-current --verbose
 
   carthage_xcframework:
     runs-on: macOS-latest
     steps:
     - uses: actions/checkout@v2
     - name: Carthage XCFramework build
-      run: carthage build --platform "ios,macos,tvos,watchos" --no-skip-current --use-xcframeworks
+      run: carthage build --platform "ios,macos,tvos,watchos" --no-skip-current --use-xcframeworks --verbose
       
   spm_linux:
     runs-on: ubuntu-latest
